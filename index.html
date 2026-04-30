@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Name Finder</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="hero">
@@ -13,18 +14,19 @@
         </div>
         
         <form id="Akan Name form">
-             <div class="form-group">
-              <label for="birthday"></label>
-            </div>
-    
-             <div class="form-group"></div>
+        <div class="form-group">
+               <label for="birthday"></label>
                <input type="date">
+        <div class="form-group">
                <label for="gender"></label>
-               <select name="Gender" id="Genderselect"></select>
-               <option value="select gender"></option>
-               <option value="male"></option>
-               <option value="female"></option>  
-             </div>
+            <p>select your gender?</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">female</label>
+
       <button type="submit" class="btn">calculate name</button>
+            <p id="akanNamedisplay"></p>
+
 </body>
 </html>
