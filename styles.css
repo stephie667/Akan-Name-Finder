@@ -11,6 +11,53 @@ body {
     background-color: rgba(206, 211, 214, 0.479);
     padding: 20px;
     margin-top: 0px;
-    
 }
 
+.hero-content p{
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+
+ /* Akan-Name Form */
+
+ #Akan-Name-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.form-group { display: flex; flex-direction: column; gap: 10px; text-align: center; }
+
+label { font-size: 15px; color: #000000; text-transform: uppercase; margin-left: 0px;}
+
+input {
+    padding: 8px;
+    background: #ffffefc0;
+    border: 1px solid #333;
+    color: #2e2c2c;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #e4bb34;
+}
+
+.btn {
+    background: #aa9105;
+    color: #fff6f6;
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover { background: #1f1d1d; }   
+                      
+    
