@@ -20,4 +20,6 @@ let femaleNames =["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 let akaName ="";
 if (gender ==="male") {akaName = maleNames[dayOfWeek];} else {akaName = femaleNames[dayOfWeek];}
 
+// update the page to show the name.
+ akaName =document.getElementById("result").innerHTML ="Your Akan Name is," + akaName;
 
