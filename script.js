@@ -1,27 +1,39 @@
-function findAkanName() {
+ function findAkanName() {
+   // This alert button is officially working alert("calculating your Akan Name...");
 let birthday=document.getElementById("birthday");
-let gender=document.querySelector('input[name="gender"]:checked').value;
+let genderElement=document.querySelector('input[name="gender"]:checked');
+  
+   // check if the user filled the form
+if(!birthday.value ||!genderElement){ 
+    alert("Please select both a date and a gender!"); 
+    return;
+}
+let gender=genderElement.value;
 let dateParts=birthday.value.split('-');
-if (dateParts[2]>= 1 && dateParts[2]<=31) {//the date valid}
-if (dateParts[1])>=1 && dateParts[1]<=12) {// month is valid} else {// month is not valid }
-if (dateParts[0] >2030) {//the year is too far in the future} else {// year valid for this example}
+    
+   //  Extract Year,Month,and Day(using numbers)
 let year= parseInt(dateParts[0]);
 let month =parseInt(dateParts[1]);
 let day =parseInt(dateParts[2]);
+
+   // Formula Variables
 let CC =parseInt(year.toString().slice(0,2));
 let YY =parseInt(year.toString().slice(2,4));
-let dayOfWeek =Math.abs(Math.floor(((CC/4)-2*CC- 1) + ((5* YY/4))+ ((26*(month+1) /10)) + day) % 7));
-let days =["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let MM =month;
+let DD =day;
+  
+   //The formula
+let dayOfWeek =Math.floor((((CC/4)-2*CC- 1) + ((5* YY/4))+ ((26*(MM+1) /10)) + DD) % 7);
+
+   // Akan Name List
 let maleNames =["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let femaleNames =["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-//we're checking if the 'gender' is male.
-//we'll need to define 'gender' later
-
+   // picking the names
 let akanName ="";
-if (gender ==="male") {akanName = maleNames[dayOfWeek];} else {akanName = femaleNames[dayOfWeek];}
+if (gender==="male") {akanName=maleNames[dayOfWeek];} else{akanName = femaleNames[dayOfWeek];}
 
-// update the page to show the name.
-document.getElementById("result").innerHTML ="Your Akan Name is," + akanName;
-}
+   // Displaying the results
+document.getElementById("result").innerHTML ="Your Akan Name is <strong>"+ akanName + </strong>!;
+ }
 

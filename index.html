@@ -6,8 +6,6 @@
     <title>Akan Name Finder</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-
 <body>
     <header class="hero">
         <div class="hero-content">
@@ -18,7 +16,7 @@
         <form id="Akan Name form">
                  <div class="main-form">
             <label for="birthday">Birthday</label>
-            <input type="date" 
+            <input type="date" id="birthday">
                  </div>
                  <div class="main-form">
             <label for="gender"></label>
@@ -28,9 +26,10 @@
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">female</label>
                  </div>
-      <button type="button" class="btn"onclick="findAkanName()">calculate name</button>
+      <button type="button" class="btn" onclick="findAkanName()">calculate name</button>
             <p id="result"></p> 
         </form>
     </div>
+  <script src="script.js"></script>
 </body>
 </html>
