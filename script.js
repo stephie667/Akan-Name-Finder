@@ -9,3 +9,4 @@ let month =parseInt(dateParts[1]);
 let day =parseInt(dateParts[2]);
 let CC =parseInt(year.toString().slice(0,2));
 let YY =parseInt(year.toString().slice(2,4));
+let dayOfWeek =Math.abs(Math.floor(((CC/4)-2*CC- 1) + ((5* YY/4))+ ((26*(month+1) /10)) + day) % 7));
