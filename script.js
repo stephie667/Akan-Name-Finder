@@ -18,6 +18,6 @@ let femaleNames =["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 //we'll need to define 'gender' later
 
 let akaName ="";
-if (gender ==="male") {akaName = maleNames[dayOfWeek];}
+if (gender ==="male") {akaName = maleNames[dayOfWeek];} else {akaName = femaleNames[dayOfWeek];}
 
 
