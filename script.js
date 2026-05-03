@@ -1,5 +1,6 @@
-let birthday=document.getElementById(birthday);
-let gender=document.querySelecto('input'[name="gender"]:checked');
+function findAkanName() {
+let birthday=document.getElementById("birthday");
+let gender=document.querySelector('input[name="gender"]:checked');
 let dateParts=birthday.value.split('-');
 if (dateParts[2]>= 1 && dateParts[2]<=31) {//the date valid}
 if (dateParts[1])>=1 && dateParts[1]<=12) {// month is valid} else {// month is not valid }
@@ -17,9 +18,10 @@ let femaleNames =["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 //we're checking if the 'gender' is male.
 //we'll need to define 'gender' later
 
-let akaName ="";
-if (gender ==="male") {akaName = maleNames[dayOfWeek];} else {akaName = femaleNames[dayOfWeek];}
+let akanName ="";
+if (gender ==="male") {akanName = maleNames[dayOfWeek];} else {akanName = femaleNames[dayOfWeek];}
 
 // update the page to show the name.
- akaName =document.getElementById("result").innerHTML ="Your Akan Name is," + akaName;
+document.getElementById("result").innerHTML ="Your Akan Name is," + akanName;
+}
 
