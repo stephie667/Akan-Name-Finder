@@ -8,14 +8,15 @@ body {
 }
 
 .hero-content p{
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 30px;
+    font-style: oblique;
 }
 
 .hero-content h1{
 font-size: 40px;
-margin-top: 0px;
-margin: auto;
+margin-bottom: 20px;
+
 
 }
 
@@ -59,6 +60,6 @@ input:focus, textarea:focus {
 } 
 
 
-.btn:hover { background: #1f1d1d; }   
+.btn:hover { background: #1f1d1d;}   
                       
     
