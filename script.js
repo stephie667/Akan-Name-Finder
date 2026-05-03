@@ -13,3 +13,11 @@ let dayOfWeek =Math.abs(Math.floor(((CC/4)-2*CC- 1) + ((5* YY/4))+ ((26*(month+1
 let days =["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let maleNames =["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let femaleNames =["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+//we're checking if the 'gender' is male.
+//we'll need to define 'gender' later
+
+let akaName ="";
+if (gender ==="male") {akaName = maleNames[dayOfWeek];}
+
+
